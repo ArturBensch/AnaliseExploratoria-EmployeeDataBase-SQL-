@@ -1,7 +1,7 @@
 # Análise Exploratória Employee DataBase (SQL)
 Projeto desenvolvido para demonstrar as habilidades e técnicas com SQL
 
-## Estudo da Base e o Modelo Relacional 
+## Estudo da Base e o Modelo Relacional - Parte 1
 
 ![image](https://github.com/user-attachments/assets/1fee0b48-6dc6-4807-a502-57dc96ae691d)
 
@@ -23,3 +23,29 @@ Projeto desenvolvido para demonstrar as habilidades e técnicas com SQL
 - A tabela employees se conecta com salaries, titles, dept_emp e dept_manager usando emp_no como chave primária.
 - A tabela departments se relaciona com dept_emp e dept_manager através de dept_no.
 - As tabelas salaries, titles, dept_emp e dept_manager possuem colunas de datas (from_date, to_date) para registrar mudanças ao longo do tempo.
+
+## Análises Iniciais - Parte 2
+O estudo foi desenvolvido de modo gradual, ocorrendo primeiro análises mais simples e se aprofundando conforme o dúvidas surgiam. 
+
+  ### Total de Funcionários Ativos
+![image](https://github.com/user-attachments/assets/66ec2dd3-1304-4d86-b666-5a53abdef62c)
+
+Por meio dessa query, ao utilizar a função DISTINCT no ID do funcionário e filtrar pela data máxima de contratação, é possível identificar que o número de funcionários ativos é próximo de 240 mil.
+
+  ### Média de Idade 
+  ![image](https://github.com/user-attachments/assets/81c246b3-ef8a-4c91-a5cd-1eba9fb1fffe)
+
+Foi realizado um cálculo utilizando a função CURDATE(), que retorna a data atual, subtraindo-a da data de nascimento (birth_date). Em seguida, aplicamos a função AVG() para calcular a média de idade. Por fim, utilizamos ROUND() para arredondar o resultado com duas casas decimais.
+
+  ### Distribuição de Funcionários por Gênero
+ ![image](https://github.com/user-attachments/assets/e60a20d1-efb9-431e-9097-17737d3ffc53)
+
+O inner join realizado para juntar a tabela *employee* com a *dept_emp*, assim trazendo informaçoes de ambas as tabelas, desde que tenham a mesma chave.    
+
+  ### Salário Médio por Cargo 
+ ![image](https://github.com/user-attachments/assets/6c684911-4c7a-4842-9d09-962d0c10e85f)
+
+Essa query nos tras algumas respostas e novas duvidas para analisar, visto que senior staff e staff sao os que possuem os maiores salários na empresa. Com isso trazendo algumas características da empresa. 
+
+
+  
