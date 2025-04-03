@@ -58,7 +58,9 @@ Essa query nos tras algumas respostas e novas duvidas para analisar, visto que s
 
  
   ### Diferença entre Senior Staff e Manager
- xxxxxxxxxxxxxxxxxxxxx
+ ![image](https://github.com/user-attachments/assets/d8d07678-1504-48b9-98fe-57fa7dd6f520)
+
+Para responder as possíveis dúvidas da query anterior, foi feita essa com a intençao de comparar salarios de manager x senior staff. Sendo assim, é possivel perceber que a empresa valoriza muito os profissionais mais ténicos e especializados. 
 
   ### View Tempo de Contrato 
 ![image](https://github.com/user-attachments/assets/e1f4cea2-1151-4541-9044-f576f43e8674)
